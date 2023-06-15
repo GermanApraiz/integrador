@@ -1,0 +1,73 @@
+/*============min-width: 576px=======*/
+/*===================================*/
+@media (min-width: 576px) {
+}
+
+/*============min-width: 768px=======*/
+/*===================================*/
+@media (min-width: 768px) {
+  .menu-label i {
+    display: none;
+  }
+  .menu-label {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+  }
+
+  /*cardGalery  */
+  .section__cardGalery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*footer*/
+  .footer__maps {
+    width: 50vw;
+    height: 30vh;
+  }
+}
+
+/*============min-width: 992px=======*/
+/*===================================*/
+@media (min-width: 992px) {
+  .article__img {
+    width: 30vw;
+    max-height: 75vh;
+    border-radius: 10px;
+  }
+}
+
+/*============min-width: 1200px=======*/
+/*===================================*/
+@media (min-width: 1200px) {
+  /*cardGalery  */
+  .section__cardGalery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .article__img {
+    width: 25vw;
+    max-height: 50vh;
+    border-radius: 10px;
+  }
+}
+
+/* layout grande
+body {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header      header      header"
+    "hero__info  hero__img   hero__img"
+    "cardGalery  cardGalery  cardGalery"
+    "footer      footer      footer";
+} */
