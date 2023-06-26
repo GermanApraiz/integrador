@@ -30,32 +30,36 @@
   </head>
 
   <body>
+    <!-- nav -->
+    <header class="header">
+      <img
+        src="./assets/img/logo/logo.png"
+        alt="logo mi pie grande"
+        class="header__logo"
+      />
+      <nav class="header__navbar navbar">
+        <!-- Agregamos el label con la imagen del menu -->
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars" style="color: #212326"></i>
+        </label>
+        <!-- Agregamos el input y lo linkeamos al label -->
+        <input type="checkbox" id="menu-toggle" />
+        <!-- Aca arranca el menu -->
+        <ul class="navbar__list">
+          <li><a class="navbar__list--a" href="#HERO">sobre nosotros</a></li>
+          <li><a class="navbar__list--a" href="#GALERIA">productos</a></li>
+          <li><a class="navbar__list--a" href="#SIGUENOS">contacto</a></li>
+          <li>
+            <a class="navbar__list--a" href="assets/registroLogin/registro.html"
+              >registrate</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="container__bg">
-      <!-- nav -->
-      <header class="header">
-        <img
-          src="./assets/img/logo/logo.png"
-          alt="logo mi pie grande"
-          class="header__logo"
-        />
-        <nav class="header__navbar navbar">
-          <!-- Agregamos el label con la imagen del menu -->
-          <label for="menu-toggle" class="menu-label">
-            <i class="fa-solid fa-bars" style="color: #212326"></i>
-          </label>
-          <!-- Agregamos el input y lo linkeamos al label -->
-          <input type="checkbox" id="menu-toggle" />
-          <!-- Aca arranca el menu -->
-          <ul class="navbar__list">
-            <li><a class="navbar__list--a" href="#hero">sobre nosotros</a></li>
-            <li><a class="navbar__list--a" href="#">galeria</a></li>
-            <li><a class="navbar__list--a" href="#SIGUENOS">contacto</a></li>
-            <li><a class="navbar__list--a" href="#NOMBRE">reservas</a></li>
-          </ul>
-        </nav>
-      </header>
       <!-- hero -->
-      <section class="hero">
+      <section class="hero" id="HERO">
         <div class="hero__info">
           <h1>
             <span>Mi Pie Grande </span> linea de calzado femenino, talles
@@ -68,19 +72,93 @@
         </div>
       </section>
 
+      <!-- carrusel -->
+      <section class="carrusel">
+        <div id="conteItemsCarrusel">
+          <div class="itemCarrusel" id="itemCarrusel-1">
+            <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+              <img
+                class="imgCarrusel"
+                src="assets/img/carrusel/Slider Pampita 12.jpg"
+              />
+            </div>
+            <div class="flechasCarrusel">
+              <a href="#itemCarrusel-5"
+                ><i class="fa-sharp fa-solid fa-arrow-left"></i
+              ></a>
+              <a href="#itemCarrusel-2"
+                ><i class="fa-sharp fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="itemCarrusel" id="itemCarrusel-2">
+            <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+              <img
+                class="imgCarrusel"
+                src="assets/img/carrusel/Slider Laurita.jpg"
+              />
+            </div>
+            <div class="flechasCarrusel">
+              <a href="#itemCarrusel-1"
+                ><i class="fa-sharp fa-solid fa-arrow-left"></i
+              ></a>
+              <a href="#itemCarrusel-3"
+                ><i class="fa-sharp fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="itemCarrusel" id="itemCarrusel-3">
+            <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+              <img
+                class="imgCarrusel"
+                src="assets/img/carrusel/Slider Laurita2.jpg"
+              />
+            </div>
+            <div class="flechasCarrusel">
+              <a href="#itemCarrusel-2"
+                ><i class="fa-sharp fa-solid fa-arrow-left"></i
+              ></a>
+              <a href="#itemCarrusel-4"
+                ><i class="fa-sharp fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="itemCarrusel" id="itemCarrusel-4">
+            <div class="tarjetaCarrusel" id="tarjetaCarrusel-4">
+              <img
+                class="imgCarrusel"
+                src="assets/img/carrusel/Slider Pampita.jpg"
+              />
+            </div>
+            <div class="flechasCarrusel">
+              <a href="#itemCarrusel-3"
+                ><i class="fa-sharp fa-solid fa-arrow-left"></i
+              ></a>
+              <a href="#itemCarrusel-5"
+                ><i class="fa-sharp fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="itemCarrusel" id="itemCarrusel-5">
+            <div class="tarjetaCarrusel" id="tarjetaCarrusel-5">
+              <img
+                class="imgCarrusel"
+                src="assets/img/carrusel/Slider Pampita2.jpg"
+              />
+            </div>
+            <div class="flechasCarrusel">
+              <a href="#itemCarrusel-4"
+                ><i class="fa-sharp fa-solid fa-arrow-left"></i
+              ></a>
+              <a href="#itemCarrusel-1"
+                ><i class="fa-sharp fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Generated efect wave  -->
-      <div class="svgWave__desktop" style="height: 150px; overflow: hidden">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          style="height: 100%; width: 100%"
-        >
-          <path
-            d="M208.08,0.00 C152.69,67.09 240.12,71.55 200.80,150.00 L179.73,151.48 L177.48,-3.44 Z"
-            style="stroke: none; fill: #08f"
-          ></path>
-        </svg>
-      </div>
 
       <div class="svgWave__movile" style="height: 150px; overflow: hidden">
         <svg
@@ -97,7 +175,11 @@
     </main>
 
     <!-- galeria -->
-    <section class="section">
+    <section class="section" id="GALERIA">
+      <h2 class="section--h2">
+        Diseños exclusivos, presioná para ver los modelos en detalle.
+      </h2>
+
       <div class="section__cardGalery">
         <div class="cardGalery">
           <a class="cardGalery__a" href="#image1">
@@ -456,32 +538,108 @@
         >
           <path
             d="M0.00,49.98 C149.99,150.00 271.72,-3.44 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-            style="stroke: none; fill: rgb(184, 40, 40)"
+            style="stroke: none; fill: #d6d1c9"
           ></path>
         </svg>
       </div>
     </section>
     <!-- footer -->
     <footer class="footer">
-      <div class="footer__maps">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.1097778735517!2d-58.39028409327062!3d-34.70857809764186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2313c90787%3A0xf64f1e425757d937!2sLADY%20STORK%20NEW%20YORK!5e0!3m2!1ses!2sar!4v1686015052699!5m2!1ses!2sar"
-          width="600"
-          height="150"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <div id="SIGUENOS" class="contacto">
+        <div class="contacto__contenido">
+          <h1 class="logo">Contáctanos</h1>
+          <div class="form">
+            <div class="form__contact">
+              <form
+                class="form__contact--form"
+                action="mailto:mail-fotografo>"
+                method="post"
+                enctype="text/plain"
+              >
+                <!--falta mail -->
+                <p>
+                  <label>Nombre completo</label>
+                  <input type="text" name="fullname" required />
+                </p>
+                <p>
+                  <label>mail</label>
+                  <input type="email" name="email" required />
+                </p>
+                <p>
+                  <label>telefono</label>
+                  <input type="tel" name="telefono" required />
+                </p>
+                <p>
+                  <label>Asunto</label>
+                  <input type="text" name="asunto" />
+                </p>
+                <p class="block">
+                  <label>Mensaje</label>
+                  <textarea name="mensage" rows="3"></textarea>
+                </p>
+                <p class="block"><button>Enviar</button></p>
+              </form>
+            </div>
+
+            <div class="contact__info">
+              <h4>More Info</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> Av. 9 de julio 1109,
+                  lanús
+                </li>
+                <li>
+                  <i class="fas fa-envelope-open-text"></i> erigaguirres@gmail
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/mipiegrande/"
+                    target="_blank"
+                    class="fa-brands fa-instagram"
+                  >
+                  </a>
+                  Instagram
+                </li>
+                <li>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+541132435789&text=hola, me encantó tus diseños!"
+                    target="_blank"
+                    class="fa-brands fa-whatsapp"
+                  >
+                  </a>
+                  Envíanos un mensaje!
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.1097778735517!2d-58.39028409327062!3d-34.70857809764186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2313c90787%3A0xf64f1e425757d937!2sLADY%20STORK%20NEW%20YORK!5e0!3m2!1ses!2sar!4v1686015052699!5m2!1ses!2sar"
+            width="600"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
-      <div class="footer__info">
-        <small
-          >&copy; 2023 <strong>My pie grande</strong> - Todos los derechos
-          reservados.</small
+      <div class="footer__contain">
+        <div class="footer__info">
+          <small
+            >&copy; 2023 <strong>My pie grande</strong> - Todos los derechos
+            reservados.</small
+          >
+          <small
+            ><p>created by <strong>Germán Apraiz.</strong></p>
+          </small>
+        </div>
+
+        <a class="footer__redir" href="#HERO">
+          <i class="fa-sharp fa-solid fa-arrow-up"> Inicio</i></a
         >
-        <small
-          ><p>created by <strong>Germán Apraiz.</strong></p>
-        </small>
       </div>
     </footer>
   </body>

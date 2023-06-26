@@ -1,0 +1,106 @@
+:root {
+  --border-color: hsla(0, 0%, 100% 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.form__main {
+  min-height: 100vh;
+  padding: 60px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/carrusel/registro.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  backdrop-filter: blur(5px);
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  border-color: rgba(147, 144, 145, 0.685);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.form__content h3 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+  color: white;
+}
+
+.input__box {
+  margin: 25px;
+}
+
+::placeholder {
+  color: inherit;
+}
+
+.input__control {
+  display: block;
+  height: 45px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(147, 144, 145, 0.685);
+  font-size: 16px;
+  color: white;
+}
+
+.input__control:focus {
+  outline: none;
+}
+
+.input__link {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.btn {
+  height: 45px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+}
+
+.form__content p {
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.gradient__text {
+  color: white;
+}
