@@ -26,13 +26,9 @@
 
 .container__bg {
   background-image: linear-gradient(
-      to right,
-      rgba(255, 126, 117, 0.803) 0%,
-      rgba(255, 133, 122, 0.714) 0%,
-      rgba(255, 140, 127, 0.528) 21%,
-      rgba(249, 144, 133, 0.528) 52%,
-      rgba(207, 85, 107, 0.714) 78%,
-      rgba(177, 42, 91, 0.803) 100%
+      155deg,
+      rgba(214, 209, 201, 0.702) 0%,
+      rgba(48, 67, 82, 0.678) 100%
     ),
     url("./img/carrusel/Slider\ Laurita2.jpg");
   width: 100%;
