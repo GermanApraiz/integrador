@@ -401,6 +401,7 @@
 }
 
 .footer__redir {
+  font-size: 0.7em;
   display: flex;
   justify-content: center;
   color: white;

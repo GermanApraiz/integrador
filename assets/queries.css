@@ -118,17 +118,16 @@
     height: 100%;
     overflow: hidden;
   }
+
   .itemCarrusel {
     height: 100%;
     position: relative;
   }
   .tarjetaCarrusel {
     height: 100%;
-    /* display: flex; */
   }
   .tarjetaCarrusel img {
     width: 100%;
-    /* margin: auto; */
     height: 100%;
     object-fit: cover;
   }
@@ -182,6 +181,7 @@
   /* maps */
   .footer__maps {
     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+    height: 69vh;
   }
 
   .footer__contain {
