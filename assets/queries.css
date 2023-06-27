@@ -34,10 +34,6 @@
     box-shadow: none;
   }
 
-  .navbar__list--a {
-    color: black;
-  }
-
   /*cardGalery  */
   .section__cardGalery {
     grid-template-columns: repeat(3, 1fr);
@@ -84,14 +80,13 @@
   }
 
   .navbar__list--a {
-    color: white;
+    color: var(--crema);
     font-size: 1.2rem;
+    font-weight: 700;
   }
 
   .container__bg {
-    box-shadow: -5px 10px 6px rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(120deg, #ffffff 0%, #ffffff 100%);
-    position: relative;
+    box-shadow: var(--bxshadow-container__bg);
     display: flex;
   }
 
@@ -100,7 +95,7 @@
     width: 30vw;
   }
   .hero__info {
-    background-color: white;
+    background-color: var(--crema);
     justify-content: space-around;
   }
 
@@ -111,7 +106,6 @@
   /*============carrusel==============*/
   .carrusel {
     display: flex;
-    box-shadow: -5px 10px 6px rgba(0, 0, 0, 0.5);
   }
   #conteItemsCarrusel {
     width: 70vw;
@@ -143,7 +137,7 @@
 
   .fa-sharp {
     font-size: 25px;
-    color: #ffffff;
+    color: var(--crema);
   }
 
   .svgWave__movile {
@@ -157,16 +151,12 @@
 
   /* footer */
   .footer {
-    background: linear-gradient(
-      155deg,
-      rgba(214, 209, 201, 1) 0%,
-      rgba(48, 67, 82, 1) 100%
-    );
+    background: var(--bg-footer-deg);
     padding: 50px;
   }
 
   .form {
-    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--bxshadow-form-maps-responsive);
   }
 
   .contact__info h4,
@@ -180,7 +170,7 @@
 
   /* maps */
   .footer__maps {
-    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--bxshadow-form-maps-responsive);
     height: 69vh;
   }
 
@@ -194,14 +184,13 @@
     text-align: left;
     left: 0;
     margin: 0;
-    color: #304352;
+    color: var(--blueGrey);
   }
 
   .footer__redir {
     font-size: 1em;
     display: flex;
     justify-content: center;
-    color: white;
   }
 
   .fa-arrow-up {
