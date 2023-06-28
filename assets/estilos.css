@@ -227,7 +227,8 @@
 }
 
 .cardGalery__info--a {
-  width: 200px;
+  width: 180px;
+  font-size: 0.8rem;
   background: var(--crema);
   color: var(--blueGrey);
   border: 0;
@@ -330,11 +331,11 @@
 
 .form {
   box-shadow: var(--bxshadow-nav);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 15px;
   border-color: var(--border-bluegrey);
   border-style: solid;
   border-width: 1px;
+  overflow: hidden;
 }
 
 .form > * {
@@ -344,6 +345,7 @@
 .form__contact--form {
   display: grid;
   grid-template-columns: 1fr;
+  height: 70%;
 }
 
 .form__contact--form label {
@@ -388,26 +390,35 @@
 .contact__info {
   background: var(--blueGrey);
   width: 100%;
-  margin: 0;
+  bottom: 0;
+  height: 30%;
 }
 
 .contact__info h4,
 .contact__info ul,
 .contact__info p {
-  font-size: 0.8em;
-  text-align: center;
-  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  /* text-align: center; */
+  margin: 0 0 1em 1em;
 }
 .contact-info ul {
+  gap: 30px;
+  text-align: left;
   list-style: none;
   padding: 0;
 }
 .contact-info ul li {
-  padding: 0.3em;
+  margin-left: 1em;
+  padding: 1em;
 }
 
 .contact__info a {
   color: white;
+  font-size: 20px;
+}
+
+.contact__info i {
+  font-size: 20px;
 }
 /*_____fin form____*/
 
@@ -418,7 +429,7 @@
   align-items: center;
   width: 80vw;
   height: 30vh;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: var(--bxshadow-nav);
 }
 
@@ -433,6 +444,9 @@
 }
 
 .footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   font-size: 16px;
   text-align: center;
   margin: 50px 0px;
