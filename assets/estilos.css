@@ -20,6 +20,7 @@
 
   /*text_colors*/
   --white: #ffffff;
+  --black: #000000;
 
   /*box_shadow*/
   --bxshadow-nav: 0 5px 6px rgba(0, 0, 0, 0.5);
@@ -226,8 +227,9 @@
   font-size: 16px;
 }
 
-.cardGalery__info--a {
+/* .cardGalery__info--a {
   width: 180px;
+  height: 34px;
   font-size: 0.8rem;
   background: var(--crema);
   color: var(--blueGrey);
@@ -236,15 +238,68 @@
   text-transform: uppercase;
   padding: 8px;
   box-shadow: var(--bxshadow-button);
+} */
+
+.cardGalery__info--a {
+  height: 40px;
+  width: 180px;
+  font-size: 0.8rem;
+  border: 0;
+  padding: 8px;
+  background-color: var(--crema);
+  border-radius: 10px;
+  box-shadow: var(--bxshadow-button);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.cardGalery__info--a:hover,
+.cardGalery__info--a:hover::before {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-image: conic-gradient(rgb(48, 67, 82) 20deg, transparent 120deg);
+  animation: rotar 1.5s linear infinite;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-270deg);
+  }
+}
+
+.cardGalery__info--a:hover::after {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 175px;
+  background-color: var(--crema);
+  border-radius: 8px;
+  box-shadow: inset 16px 14px 20px var(--crema);
+}
+
+.cardGalery__info--a p {
+  color: var(--blueGrey);
+  font-size: 1rem;
+  z-index: 2;
+  background-color: transparent;
+  text-align: center;
+  text-shadow: 3px 3px 5px var(--black);
+}
+
+/* .cardGalery__info--a:hover,
 .cardGalery__info--a:focus {
   background: var(--blueGrey);
   color: var(--crema);
   transition: background-color 1.3s ease-out;
   box-shadow: var(--bxshadow-button--hover);
-}
+} */
 
 .article {
   position: fixed;
@@ -436,6 +491,7 @@
 .footer__maps iframe {
   width: 98%;
   height: 90%;
+  overflow: hidden;
 }
 
 .footer__contain {
