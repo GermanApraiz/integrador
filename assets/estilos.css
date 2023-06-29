@@ -79,6 +79,10 @@
   align-items: center;
   cursor: pointer;
   height: 50px;
+  animation: slide-under 2s ease-out;
+  animation-fill-mode: backwards;
+  animation: fade 2.5s linear;
+  animation-fill-mode: backwards;
 }
 
 .navbar {
@@ -106,6 +110,24 @@
   display: flex;
 }
 
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-under {
+  from {
+    transform: translateY(-380px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .navbar ul {
   background-color: var(--bg-nav);
   position: absolute;
@@ -122,11 +144,28 @@
   display: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  animation: slide-under 1.1s ease-out;
+  animation-fill-mode: backwards;
 }
 
 .navbar__list--a {
   color: var(--blueGrey);
+  animation: fade 2.5s linear;
+  animation-fill-mode: backwards;
 }
+
+/* .navbar__list:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.navbar__list:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.navbar__list:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.navbar__list:nth-child(4) {
+  animation-delay: 1.2s;
+} */
 
 /* hero */
 .hero {
@@ -227,19 +266,6 @@
   font-size: 16px;
 }
 
-/* .cardGalery__info--a {
-  width: 180px;
-  height: 34px;
-  font-size: 0.8rem;
-  background: var(--crema);
-  color: var(--blueGrey);
-  border: 0;
-  border-radius: 5px;
-  text-transform: uppercase;
-  padding: 8px;
-  box-shadow: var(--bxshadow-button);
-} */
-
 .cardGalery__info--a {
   height: 40px;
   width: 180px;
@@ -262,15 +288,16 @@
   height: 300px;
   width: 300px;
   background-image: conic-gradient(rgb(48, 67, 82) 20deg, transparent 120deg);
-  animation: rotar 1.5s linear infinite;
+  animation: rotar 0.4s linear /*infinite*/;
+  animation-fill-mode: forwards;
 }
 
 @keyframes rotar {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(-270deg);
+  100% {
+    transform: rotate(-260deg);
   }
 }
 
@@ -292,14 +319,6 @@
   text-align: center;
   text-shadow: 3px 3px 5px var(--black);
 }
-
-/* .cardGalery__info--a:hover,
-.cardGalery__info--a:focus {
-  background: var(--blueGrey);
-  color: var(--crema);
-  transition: background-color 1.3s ease-out;
-  box-shadow: var(--bxshadow-button--hover);
-} */
 
 .article {
   position: fixed;
@@ -390,6 +409,7 @@
   border-color: var(--border-bluegrey);
   border-style: solid;
   border-width: 1px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -397,10 +417,14 @@
   padding: 1em;
 }
 
+.form__contact {
+  height: 70%;
+  margin-bottom: 20px;
+}
+
 .form__contact--form {
   display: grid;
   grid-template-columns: 1fr;
-  height: 70%;
 }
 
 .form__contact--form label {
@@ -445,7 +469,6 @@
 .contact__info {
   background: var(--blueGrey);
   width: 100%;
-  bottom: 0;
   height: 30%;
 }
 
@@ -453,8 +476,7 @@
 .contact__info ul,
 .contact__info p {
   font-size: 1rem;
-  /* text-align: center; */
-  margin: 0 0 1em 1em;
+  margin: 0 0 0.3em 1.1em;
 }
 .contact-info ul {
   gap: 30px;
